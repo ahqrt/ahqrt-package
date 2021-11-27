@@ -1,0 +1,41 @@
+{
+  "name": "@ahqrt/generate-template",
+  "version": "0.1.0",
+  "description": "generate template",
+  "author": "ahqrt <1217223113@qq.com>",
+  "homepage": "https://github.com/ahqrt/ahqrt-package#readme",
+  "license": "ISC",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahqrt/ahqrt-package.git"
+  },
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "dev": "yarn build -w"
+  },
+  "bugs": {
+    "url": "https://github.com/ahqrt/ahqrt-package/issues"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "@types/handlebars": "^4.1.0",
+    "@types/micromatch": "^4.0.2",
+    "@types/recursive-readdir": "^2.2.0",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "fs-extra": "^10.0.0",
+    "handlebars": "^4.7.7",
+    "micromatch": "^4.0.4",
+    "recursive-readdir": "^2.2.2"
+  }
+}
