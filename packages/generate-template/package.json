@@ -15,7 +15,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ahqrt/ahqrt-package.git"
+    "url": "git+https://github.com/ahqrt/ahqrt-package.git",
+    "directory": "packages/template-generator"
   },
   "scripts": {
     "prebuild": "rimraf dist",

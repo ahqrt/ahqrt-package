@@ -1,0 +1,25 @@
+{
+  "name": "@ahqrt/eslint-rules",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "ahqrt <1217223113@qq.com>",
+  "homepage": "https://github.com/ahqrt/ahqrt-package#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahqrt/ahqrt-package.git",
+    "directory": "packages/eslint-rules"
+
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/ahqrt/ahqrt-package/issues"
+  },
+  "dependencies": {}
+}
