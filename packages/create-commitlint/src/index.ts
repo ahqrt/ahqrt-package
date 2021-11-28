@@ -49,5 +49,4 @@ export const init = () => {
       stderr: 'inherit'
     }
   )
-
 }
