@@ -1,0 +1,28 @@
+{
+  "name": "@ahqrt/eslint-config-react-native",
+  "version": "1.0.0",
+  "description": "react native eslint config",
+  "author": "ahqrt <1217223113@qq.com>",
+  "homepage": "https://github.com/ahqrt/ahqrt-package#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "index.js",
+    "patch.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahqrt/ahqrt-package.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ahqrt/ahqrt-package/issues"
+  },
+  "dependencies": {
+    "@ahqrt/eslint-config-react-typescript": "^1.0.1",
+    "eslint-plugin-react-native": "^3.11.0",
+    "metro-react-native-babel-preset": "^0.66.2"
+  }
+}
