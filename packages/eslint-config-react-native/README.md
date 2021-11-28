@@ -1,11 +1,70 @@
-# `eslint-config-react-native`
+# `@ahqrt/eslint-config-react-native`
 
 > TODO: description
+# Install
+```sh
+yarn add -D eslint prettier @ahqrt/eslint-config-react-native @ahqrt/prettier-config lint-staged yorkie
+```
 
-## Usage
+## 手动配置
+
+### .eslintrc.js
+```js
+module.exports = {
+  root: true,
+  extends: ['@ahqrt/eslint-config-react-native'],
+};
 
 ```
-const eslintConfigReactNative = require('eslint-config-react-native');
 
-// TODO: DEMONSTRATE API
+### .prettierrc.js
+```js
+module.exports = require('@ahqrt/prettier-config')
+```
+### .editorconfig
+```
+# EditorConfig is awesome: http://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+# Unix-style newlines with a newline ending every file
+[*]
+quote_type = single  # Fix Prettier "prettier.singleQuote" not working in 1.40 vs code
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.md]
+trim_trailing_whitespace = false
+
+```
+
+### pre-commit lint
+
+####package.json
+```json
+{
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": ["eslint --fix"],
+    "**/*.{md,json}": ["prettier --write"]
+  }
+}
+```
+
+#### .vscode/settings.json
+
+```js
+{
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+}
 ```
