@@ -1,6 +1,6 @@
 {
-  "name": "@ahqrt/eslint-config-base",
-  "version": "1.2.0",
+  "name": "@ahqrt/eslint-config-react",
+  "version": "1.0.0",
   "description": "> TODO: description",
   "author": "ahqrt <1217223113@qq.com>",
   "homepage": "https://github.com/ahqrt/ahqrt-package#readme",
@@ -19,10 +19,13 @@
   "dependencies": {
     "@ahqrt/eslint-rules": "^1.1.0",
     "@rushstack/eslint-patch": "^1.1.0",
-    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb": "^19.0.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-prettier": "^4.0.0"
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.27.1",
+    "eslint-plugin-react-hooks": "^4.3.0"
   },
   "peerDependencies": {
     "eslint": "^8.3.0",
