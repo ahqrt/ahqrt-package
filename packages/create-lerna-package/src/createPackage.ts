@@ -24,7 +24,7 @@ export const createPackage = async (name :string, loc?:string) => {
     }
     answer.directory = locPath
 
-    const rootDir = `${process.cwd()}/package/${locPath}`
+    const rootDir = `${process.cwd()}/packages/${locPath}`
     if(fs.existsSync(rootDir) && !(await isDirEmpty(rootDir))) {
       spinner.fail(
         chalk.red(`cannot initialize new project, because directory packages/${locPath} is not empty `)

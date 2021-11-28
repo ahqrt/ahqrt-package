@@ -2,6 +2,16 @@
 # yarn lockfile v1
 
 
+"@ahqrt/generate-template@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@ahqrt/generate-template/-/generate-template-0.1.0.tgz#cd99c32aff2a894abb87028219af758561d47773"
+  integrity sha512-1OfGHasVHnqEeGRK0IndxHZiSbZ3OLctj8JPY6e1yOw/rNwzaeIPlket55g+O9vlu8wUXYrgGLV2GDM/XG9z/A==
+  dependencies:
+    fs-extra "^10.0.0"
+    handlebars "^4.7.7"
+    micromatch "^4.0.4"
+    recursive-readdir "^2.2.2"
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.16.0":
   version "7.16.0"
   resolved "https://registry.npmmirror.com/@babel/code-frame/download/@babel/code-frame-7.16.0.tgz#0dfc80309beec8411e65e706461c408b0bb9b431"
