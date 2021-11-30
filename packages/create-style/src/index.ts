@@ -82,7 +82,7 @@ export const init = async () => {
     const {eslint} = answer
     const eslintConfig = `module.exports = {
   root: true,
-  extends: ['@ahqrt/eslint-config-${eslint}']
+  extends: ['@ahqrt/eslint-config-${eslint}'],
 }
 `
     fs.writeFileSync(`${projectDir}/.eslintrc.js`, eslintConfig)
