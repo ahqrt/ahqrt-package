@@ -1,6 +1,6 @@
 {
   "name": "@ahqrt/create-style",
-  "version": "0.6.6",
+  "version": "0.7.6",
   "description": "自动生成eslint prettier配置文件",
   "keywords": [
     "ahqrt"
