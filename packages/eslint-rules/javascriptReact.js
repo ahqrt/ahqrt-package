@@ -16,11 +16,5 @@ module.exports = {
   'react/static-property-placement': 0,
   'react/no-unescaped-entities': 0,
   'react-hooks/exhaustive-deps': 0,
-  'react/function-component-definition': [
-    2,
-    {
-    namedComponents: "function-declaration" | "function-expression" | "arrow-function" | ["function-declaration" | "function-expression" | "arrow-function"],
-    unnamedComponents: "function-expression" | "arrow-function" | ["function-expression" | "arrow-function"],
-    },
-],
+  'react/function-component-definition': [0],
 }
