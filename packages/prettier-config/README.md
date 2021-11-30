@@ -5,7 +5,9 @@
 ## Usage
 
 ```
-const prettierConfig = require('prettier-config');
+.prettierrc.js
+
+module.exports = require('@ahqrt/prettier-config');
 
 // TODO: DEMONSTRATE API
 ```

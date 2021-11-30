@@ -1,4 +1,4 @@
 module.exports = {
   root: true,
-  extends: ['@ahqrt/eslint-typescript']
+  extends: ['@ahqrt/eslint-config-typescript']
 }

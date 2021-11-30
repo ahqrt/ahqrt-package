@@ -1,6 +1,6 @@
 {
   "name": "@ahqrt/eslint-config-react-typescript",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "eslint react typescript config",
   "author": "ahqrt <1217223113@qq.com>",
   "homepage": "https://github.com/ahqrt/ahqrt-package#readme",
@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@ahqrt/eslint-config-react": "^1.0.0",
-    "@ahqrt/eslint-rules": "^1.1.0",
+    "@ahqrt/eslint-rules": "^1.2.0",
     "@rushstack/eslint-patch": "^1.1.0",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
