@@ -1,0 +1,32 @@
+{
+  "name": "@ahqrt/utils",
+  "version": "0.1.6",
+  "description": "常用的utils函数工具集",
+  "keywords": ["ahqrt"],
+  "files": ["lib"],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "prebuild": "rimraf lib",
+    "build": "tsc",
+    "dev": "yarn build -w"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahqrt/ahqrt-package.git",
+    "directory": "packages/utils"
+  },
+  "author": {
+    "name": "ahqrt",
+    "email": "1217223113@qq.com",
+    "url": "https://github.com/ahqrt"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ahqrt/ahqrt-package/issues"
+  },
+  "homepage": "https://github.com/ahqrt/ahqrt-package/tree/main/packages/utils#readme"
+}
