@@ -7,7 +7,7 @@ root = true
 [*]
 quote_type = single  # Fix Prettier "prettier.singleQuote" not working in 1.40 vs code
 indent_style = space
-indent_size = 2
+indent_size = 4
 end_of_line = lf
 charset = utf-8
 trim_trailing_whitespace = true

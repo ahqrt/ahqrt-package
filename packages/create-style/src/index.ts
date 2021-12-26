@@ -81,6 +81,7 @@ export const init = async () => {
     const eslintConfig = `module.exports = {
 root: true,
 extends: ['@ahqrt/eslint-config-${eslint}'],
+ignorePatterns: ['lib', '**/*.d.ts']
 }
 `
     fs.writeFileSync(`${projectDir}/.eslintrc.js`, eslintConfig)
