@@ -1,34 +1,37 @@
 {
-  "name": "@ahqrt/eslint-config-react-typescript",
-  "version": "1.2.0",
-  "description": "eslint react typescript config",
-  "author": "ahqrt <1217223113@qq.com>",
-  "homepage": "https://github.com/ahqrt/ahqrt-package#readme",
-  "license": "ISC",
-  "main": "index.js",
-  "files": [
-    "index.js",
-    "patch.js"
-  ],
-  "publishConfig": {
-    "access": "public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ahqrt/ahqrt-package.git"
-  },
-  "bugs": {
-    "url": "https://github.com/ahqrt/ahqrt-package/issues"
-  },
-  "dependencies": {
-    "@ahqrt/eslint-config-react": "^1.0.0",
-    "@ahqrt/eslint-rules": "^1.2.0",
-    "@rushstack/eslint-patch": "^1.1.0",
-    "@typescript-eslint/eslint-plugin": "^5.4.0",
-    "@typescript-eslint/parser": "^5.4.0",
-    "eslint-import-resolver-typescript": "^2.5.0"
-  },
-  "peerDependencies": {
-    "typescript": "^4.5.2"
-  }
+    "name": "@ahqrt/eslint-config-react-typescript",
+    "version": "1.2.0",
+    "description": "eslint react typescript config",
+    "author": "ahqrt <1217223113@qq.com>",
+    "homepage": "https://github.com/ahqrt/ahqrt-package#readme",
+    "license": "ISC",
+    "main": "index.js",
+    "files": [
+        "index.js",
+        "patch.js"
+    ],
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ahqrt/ahqrt-package.git"
+    },
+    "bugs": {
+        "url": "https://github.com/ahqrt/ahqrt-package/issues"
+    },
+    "dependencies": {
+        "@ahqrt/eslint-config-react": "^1.0.0",
+        "@ahqrt/eslint-rules": "^1.2.0",
+        "@rushstack/eslint-patch": "^1.1.0",
+        "@typescript-eslint/eslint-plugin": "^5.4.0",
+        "@typescript-eslint/parser": "^5.4.0",
+        "eslint-import-resolver-typescript": "^2.5.0"
+    },
+    "peerDependencies": {
+        "typescript": "^4.5.2"
+    },
+    "devDependencies": {
+        "eslint-config-airbnb-typescript": "^16.1.0"
+    }
 }

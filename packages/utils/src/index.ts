@@ -1,4 +1,3 @@
-import RegUtils from "./reg"
-export {
-  RegUtils
-}
+import RegUtils from './reg'
+
+export { RegUtils }

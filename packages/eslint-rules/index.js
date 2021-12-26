@@ -3,7 +3,7 @@ const typescript = require('./typescript')
 const javascriptReact = require('./javascriptReact')
 
 module.exports = {
-  javascript,
-  typescript,
-  javascriptReact
+    javascript,
+    typescript,
+    javascriptReact
 }

@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-const { init } = require('../lib');
+const { init } = require('../lib')
 
-init();
+init()
