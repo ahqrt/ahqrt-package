@@ -1,6 +1,6 @@
 {
     "name": "@ahqrt/eslint-config-base",
-    "version": "1.5.0",
+    "version": "1.6.0",
     "description": "> TODO: description",
     "author": "ahqrt <1217223113@qq.com>",
     "homepage": "https://github.com/ahqrt/ahqrt-package#readme",
@@ -17,7 +17,7 @@
         "url": "https://github.com/ahqrt/ahqrt-package/issues"
     },
     "dependencies": {
-        "@ahqrt/eslint-rules": "^1.2.0",
+        "@ahqrt/eslint-rules": "^1.6.0",
         "@rushstack/eslint-patch": "^1.1.0",
         "eslint-config-airbnb-base": "^15.0.0",
         "eslint-config-prettier": "^8.3.0",
