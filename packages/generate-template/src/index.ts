@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import fs from 'fs-extra'
 import handlebars from 'handlebars'
 import recursive from 'recursive-readdir'
@@ -16,12 +15,8 @@ interface IOption {
 }
 
 // register handlebars helper
-handlebars.registerHelper('if_eq', (a, b, opts) => {
-    return a === b ? opts.fn(this) : opts.inverse(this)
-})
-handlebars.registerHelper('unless_eq', (a, b, opts) => {
-    return a === b ? opts.inverse(this) : opts.fn(this)
-})
+handlebars.registerHelper('if_eq', (a, b, opts) => (a === b ? opts.fn(this) : opts.inverse(this)))
+handlebars.registerHelper('unless_eq', (a, b, opts) => (a === b ? opts.inverse(this) : opts.fn(this)))
 
 const generator = async <TMeta>(
     meta: TMeta,

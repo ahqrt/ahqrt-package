@@ -9,9 +9,7 @@ module.exports = {
                 'airbnb',
                 'airbnb-typescript',
                 'airbnb/hooks',
-                'plugin:@typescript-eslint/recommended',
-                'plugin:prettier/recommended',
-                'prettier'
+                'plugin:@typescript-eslint/recommended'
             ],
             parser: '@typescript-eslint/parser',
             parserOptions: {
@@ -36,7 +34,9 @@ module.exports = {
                 'import/resolver': {
                     // use <root>/tsconfig.json
                     typescript: {
-                        alwaysTryTypes: true // always try to resolve types under `<roo/>@types` directory even it doesn't contain any source code, like `@types/unist`
+                        // always try to resolve types under `<roo/>@types` directory even it
+                        // doesn't contain any source code, like `@types/unist`
+                        alwaysTryTypes: true
                     }
                 }
             }

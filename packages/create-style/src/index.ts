@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 /**
  * 根据inquirer提示，自动生成eslint 和 prettier的配置
  */
@@ -17,7 +16,7 @@ export const init = async () => {
         process.exit(0)
     }
     fs.copySync(templateDir, projectDir)
-    console.log(chalk.greenBright('generated .editorconfig && .prettierrc.js file'))
+    console.log(chalk.greenBright('generated .editorconfig file'))
 
     if (!fs.existsSync(`${projectDir}/package.json`)) {
         console.log(chalk.yellow('your project directory cannot contain a package.json file, now we generate it!'))
@@ -44,12 +43,10 @@ export const init = async () => {
         'lint-staged': origin['lint-staged']
             ? {
                 ...origin['lint-staged'],
-                '**/*.{js,jsx,ts,tsx}': ['eslint --fix'],
-                '**/*.{md,json}': ['prettier --write']
+                '**/*.{js,jsx,ts,tsx}': ['eslint --fix']
             }
             : {
-                '**/*.{js,jsx,ts,tsx}': ['eslint --fix'],
-                '**/*.{md,json}': ['prettier --write']
+                '**/*.{js,jsx,ts,tsx}': ['eslint --fix']
             }
     }
 
@@ -89,7 +86,7 @@ ignorePatterns: ['lib', '**/*.d.ts']
     const { installBy } = answer
     if (installBy === 'yarn') {
         execa.commandSync(
-            `yarn add commitizen -D -W eslint prettier @ahqrt/eslint-config-${eslint} @ahqrt/prettier-config lint-staged yorkie`,
+            `yarn add commitizen -D -W eslint @ahqrt/eslint-config-${eslint} lint-staged yorkie`,
             {
                 shell: true,
                 stdout: 'inherit',
@@ -107,7 +104,7 @@ ignorePatterns: ['lib', '**/*.d.ts']
     }
     if (installBy === 'npm') {
         execa.commandSync(
-            `npm i commitizen -D eslint prettier @ahqrt/eslint-config-${eslint} @ahqrt/prettier-config lint-staged yorkie`,
+            `npm i commitizen -D eslint @ahqrt/eslint-config-${eslint} lint-staged yorkie`,
             {
                 shell: true,
                 stdout: 'inherit',

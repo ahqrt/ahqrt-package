@@ -4,7 +4,7 @@ module.exports = {
     overrides: [
         {
             files: ['*.jsx', '*.js'],
-            extends: ['airbnb', 'airbnb/hooks', 'plugin:prettier/recommended', 'prettier'],
+            extends: ['airbnb', 'airbnb/hooks'],
             parserOptions: {
                 ecmaFeatures: {
                     impliedStrict: true,

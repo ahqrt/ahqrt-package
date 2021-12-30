@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import generator from '@ahqrt/generate-template'
 import tmp from 'tmp-promise'
 import fs from 'fs-extra'
@@ -8,11 +7,9 @@ import ora from 'ora'
 import path from 'path'
 import execa from 'execa'
 
-export const isDirEmpty = (dirname: string): Promise<any> => {
-    return fs.promises.readdir(dirname).then((files) => {
-        return files.length === 0
-    })
-}
+export const isDirEmpty = (dirname: string): Promise<any> =>
+    // eslint-disable-next-line implicit-arrow-linebreak
+    fs.promises.readdir(dirname).then((files) => files.length === 0)
 
 /**
  * package.json 配置项
