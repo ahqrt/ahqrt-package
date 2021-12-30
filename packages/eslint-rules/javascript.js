@@ -2,6 +2,7 @@ module.exports = {
     'global-window': 0,
     'prefer-destructuring': ['error', { object: true, array: false }],
     'brace-style': ['error', 'stroustrup', { allowSingleLine: true }],
+    'no-shadow': 1,
     indent: [
         'error',
         4,

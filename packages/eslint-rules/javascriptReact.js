@@ -13,6 +13,10 @@ module.exports = {
         'error',
         4
     ], // 四空格缩进
+    'react/jsx-indent-props': [
+        'error',
+        4
+    ],
     'react/destructuring-assignment': 0,
     'react/prop-types': 0,
     'react/jsx-props-no-spreading': 0,
